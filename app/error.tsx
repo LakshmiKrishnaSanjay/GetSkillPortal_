@@ -1,14 +1,7 @@
 "use client";
 
-import { useEffect } from "react";
-import { useRouter } from "next/navigation";
+import UnderConstruction from "./under-construction/page";
 
 export default function GlobalError() {
-  const router = useRouter();
-
-  useEffect(() => {
-    router.replace("/under-construction");
-  }, [router]);
-
-  return null;
+  return <UnderConstruction />;
 }
